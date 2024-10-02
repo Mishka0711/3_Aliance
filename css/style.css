@@ -138,6 +138,11 @@ body::-webkit-scrollbar {
   color: inherit;
 }
 
+.phone-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
 .button {
   font-size: 1rem;
   font-weight: 600;
@@ -201,6 +206,11 @@ body::-webkit-scrollbar {
   list-style: none;
   color: white;
   position: relative;
+}
+
+.features-icon {
+  width: 2.25rem;
+  height: 2.25rem;
 }
 .header-features-item {
   padding: 1.875rem 3.125rem;
