@@ -16,12 +16,24 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Bebas Neue Bold";
+  src: url("../fonts/BebasNeueBold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   font-family: "Noto Sans", sans-serif;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 .container {
   max-width: 1440px;
+
   margin: auto;
 }
 
@@ -92,7 +104,9 @@ body {
 
 .header-nav-link {
   text-decoration: none;
+  font-family: Noto Sans;
   font-size: 16px;
+  font-weight: 500;
   margin-right: 50px;
   color: inherit;
 }
@@ -116,7 +130,7 @@ body {
   font-weight: 600;
   line-height: 160%;
   color: rgb(255, 255, 255);
-  background: rgb(58, 113, 209);
+  background: #5c8ee5;
   padding: 25px 60px 25px 60px;
   border: none;
   display: inline-block;
@@ -126,6 +140,7 @@ body {
 .navbar-button {
   height: 100%;
   flex-shrink: 0;
+  padding: 25px 53px;
 }
 
 .header-button {
@@ -146,10 +161,11 @@ body {
 }
 .header-title {
   max-width: 1080px;
-  font-family: "Bebas Neue Book";
+  font-family: "Bebas Neue";
+  font-weight: 400;
   font-size: 80px;
   line-height: 120%;
-  margin: 30px 0;
+  margin: 23px 0 38px 0;
 }
 
 .header-text {
@@ -159,12 +175,14 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 160%;
+  letter-spacing: 0;
+  word-spacing: 1.6px;
   margin-bottom: 50px;
 }
 
 .header-features {
   display: flex;
-  min-height: 168px;
+  max-height: 168px;
   padding: 0;
   margin-top: 100px;
   list-style: none;
@@ -174,6 +192,7 @@ body {
 .header-features-item {
   padding: 30px 50px;
   border: 1px solid rgba(235, 235, 240, 0.2);
+  width: 25%;
 }
 
 .header-features-item:not(:last-child) {
@@ -184,19 +203,26 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 160%;
+  letter-spacing: 0;
+  letter-spacing: 0.2px;
+  line-height: 164%;
 }
 
 .section {
   margin-top: 150px;
   margin-bottom: 150px;
+  /* margin-left: 240px;
+  margin-right: 270px; */
 }
 
 .section-title {
   /* h2 */
   color: #292d33;
-  font-family: "Bebas Neue";
+  font-family: "Bebas Neue book";
   font-size: 60px;
   line-height: 120%;
+  margin-top: 25px;
+  letter-spacing: 0.3px;
 }
 
 .steps {
@@ -234,8 +260,9 @@ body {
   font-size: 28px;
   font-weight: 400;
   line-height: 160%;
-  margin-top: 30px;
+  margin-top: 35px;
   margin-bottom: 10px;
+  letter-spacing: 0.2px;
 }
 
 .steps-text {
@@ -243,9 +270,11 @@ body {
   font-family: Noto Sans;
   font-size: 16px;
   font-weight: 400;
-  line-height: 160%;
+  line-height: 166%;
   margin-top: 10px;
   margin-bottom: 20px;
+  letter-spacing: 0.2px;
+  word-spacing: 1.1px;
 }
 
 .steps-link {
@@ -255,7 +284,7 @@ body {
   color: rgb(92, 142, 230);
   font-family: Noto Sans;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 620;
   line-height: 160%;
 }
 
