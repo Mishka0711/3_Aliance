@@ -35,10 +35,6 @@ body {
   display: none;
 }
 
-body::-webkit-scrollbar {
-  display: none;
-}
-
 .container {
   max-width: 90rem;
   margin: auto;
@@ -393,6 +389,7 @@ body::-webkit-scrollbar {
     flex-grow: 1;
     justify-content: center;
   }
+
   .mobile-menu-toggle {
     width: 80px;
     height: 100%;
@@ -410,6 +407,7 @@ body::-webkit-scrollbar {
     height: 1px;
     background-color: #fff;
     width: 100%;
+    transition: transform 0.2s;
   }
   .mobile-menu-line:nth-child(2) {
     width: 80%;
@@ -515,5 +513,15 @@ body::-webkit-scrollbar {
   .social-icon {
     width: 24px;
     height: 24px;
+  }
+
+  .close-menu .mobile-menu-line:nth-child(2) {
+    display: none;
+  }
+  .close-menu .mobile-menu-line:nth-child(1) {
+    transform: rotate(45deg) translateY(10px);
+  }
+  .close-menu .mobile-menu-line:nth-child(3) {
+    transform: rotate(-45deg) translateY(-10px);
   }
 }
