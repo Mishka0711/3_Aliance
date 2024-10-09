@@ -279,6 +279,8 @@ body {
 
 .steps-item {
   max-width: 20.625rem;
+  min-height: 100%;
+  /* border: 1px solid rgba(3, 3, 3, 0.2); */
 }
 
 .steps-num {
@@ -342,6 +344,27 @@ body {
   margin-right: 1.25rem;
 }
 
+.swiper2 {
+  max-width: 100%;
+}
+
+.steps-slider-buttons {
+  display: none;
+  height: 40px;
+}
+
+.steps-slider-button-prev,
+.steps-slider-button-next {
+  height: 100%;
+  width: 40px;
+  border: 1px solid rgba(235, 235, 240, 0.2);
+  background: #5c8ee6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
 @media (max-width: 1700px) {
   html {
     font-size: 14px;
@@ -388,6 +411,19 @@ body {
   }
   .slider-buttons {
     display: flex;
+  }
+
+  .steps-slider-buttons {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .steps {
+    gap: 0;
+  }
+  .steps-item {
+    /* min-width: 18.75rem; */
+    width: 300px;
   }
 }
 @media (max-width: 992px) {
