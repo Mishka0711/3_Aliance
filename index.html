@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Aliance Production</title>
@@ -155,42 +156,62 @@
           <div class="button">Подробнее о компании</div>
         </div>
         <!-- /.header-content -->
-        <ul class="header-features">
-          <li class="header-features-item">
-            <svg class="features-icon">
-              <use href="img/sprite.svg#1_time"></use>
-            </svg>
-            <p class="header-features-text">Непрерывная работа c 2017 года</p>
-          </li>
-          <li class="header-features-item">
-            <svg class="features-icon">
-              <use href="img/sprite.svg#2_sert"></use>
-            </svg>
 
-            <p class="header-features-text">Вся продукция сертифицирована</p>
-          </li>
-          <li class="header-features-item">
-            <svg class="features-icon">
-              <use href="img/sprite.svg#3_control"></use>
-            </svg>
+        <!-- основной блок слайдера -->
+        <div class="swiper">
+          <!-- обертка слайдера -->
+          <ul class="swiper-wrapper header-features">
+            <!-- слайды -->
+            <li class="swiper-slide header-features-item">
+              <svg class="features-icon">
+                <use href="img/sprite.svg#1_time"></use>
+              </svg>
+              <p class="header-features-text">Непрерывная работа c 2017 года</p>
+            </li>
+            <li class="swiper-slide header-features-item">
+              <svg class="features-icon">
+                <use href="img/sprite.svg#2_sert"></use>
+              </svg>
+              <p class="header-features-text">Вся продукция сертифицирована</p>
+            </li>
+            <li class="swiper-slide header-features-item">
+              <svg class="features-icon">
+                <use href="img/sprite.svg#3_control"></use>
+              </svg>
+              <p class="header-features-text">
+                Контроль качества на всех этапах
+              </p>
+            </li>
+            <li class="swiper-slide header-features-item">
+              <svg class="features-icon">
+                <use href="img/sprite.svg#4_delivery"></use>
+              </svg>
+              <p class="header-features-text">
+                Возможны поставки по всей России
+              </p>
+            </li>
+            <li class="swiper-slide header-features-item">
+              <svg class="features-icon">
+                <use href="img/sprite.svg#5_speed"></use>
+              </svg>
+              <p class="header-features-text">Оперативное производство</p>
+            </li>
+          </ul>
 
-            <p class="header-features-text">Контроль качества на всех этапах</p>
-          </li>
-          <li class="header-features-item">
-            <svg class="features-icon">
-              <use href="img/sprite.svg#4_delivery"></use>
-            </svg>
-
-            <p class="header-features-text">Возможны поставки по всей России</p>
-          </li>
-          <li class="header-features-item">
-            <svg class="features-icon">
-              <use href="img/sprite.svg#5_speed"></use>
-            </svg>
-            <p class="header-features-text">Оперативное производство</p>
-          </li>
-        </ul>
-        <!-- /.header-features -->
+          <!-- кнопки вперед назад -->
+          <div class="slider-buttons">
+            <div class="slider-button-prev">
+              <svg class="features-icon" width="36" height="24">
+                <use href="img/sprite.svg#arrow-prev"></use>
+              </svg>
+            </div>
+            <div class="slider-button-next">
+              <svg class="features-icon" width="36" height="24">
+                <use href="img/sprite.svg#arrow-next"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
       </div>
       <!-- /.container -->
     </header>
@@ -235,6 +256,7 @@
       </div>
       <!-- /.container -->
     </section>
+    <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
