@@ -41,14 +41,17 @@ const swiper = new Swiper(".swiper", {
   autoHeight: true,
   slidesPerView: 1,
   navigation: {
-    nextEl: ".sliper-button-next",
-    prevEl: ".sliper-button-prev",
+    prevEl: ".slider-button-prev",
+    nextEl: ".slider-button-next",
   },
   // Responsive breakpoints
   breakpoints: {
     // when window width is >= 320px
     576: {
       slidesPerView: 2,
+      // centeredSlides: true,
+      // slidesOffsetBefore: -100,
+      // slidesOffsetAfter: 60,
     },
     // when window width is >= 480px
     768: {
