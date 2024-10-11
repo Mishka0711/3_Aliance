@@ -71,7 +71,7 @@ const swiper2 = new Swiper(".swiper2", {
   speed: 400,
   autoHeight: true,
   slidesPerView: 1,
-  spaceBetween: 30,
+  // spaceBetween: 30,
   navigation: {
     prevEl: ".steps-slider-button-prev",
     nextEl: ".steps-slider-button-next",
@@ -80,19 +80,18 @@ const swiper2 = new Swiper(".swiper2", {
 
   breakpoints: {
     // when window width is >= 576px
-
-    768: {
+    576: {
       slidesPerView: 2,
-      spaceBetween: 30,
+    },
+    768: {
+      slidesPerView: 3,
     },
     // when window width is >= 1024px
     1024: {
       slidesPerView: 3,
-      spaceBetween: 30,
     },
     1200: {
       slidesPerView: 4,
-      spaceBetween: 30,
     },
   },
 });

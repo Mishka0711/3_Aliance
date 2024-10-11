@@ -345,7 +345,15 @@ body {
 }
 
 .swiper2 {
-  max-width: 100%;
+  /* max-width: 100%; */
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-wrapper {
+  box-sizing: border-box;
+  width: 100%;
+  /* overflow: hidden; */
 }
 
 .steps-slider-buttons {
@@ -423,6 +431,8 @@ body {
   }
   .steps-item {
     /* min-width: 18.75rem; */
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
     width: 300px;
   }
 }
@@ -602,5 +612,8 @@ body {
 
   .header-content {
     padding-top: 2rem;
+  }
+  .steps-item {
+    max-width: 100%;
   }
 }
