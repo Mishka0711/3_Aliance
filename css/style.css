@@ -31,6 +31,10 @@ body {
   font-family: "Noto Sans", sans-serif;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 .mobile-menu {
   display: none;
 }
@@ -463,7 +467,8 @@ body {
   font-size: 1rem;
   line-height: 160%;
   text-align: left;
-  margin-bottom: 24.625rem;
+  margin-bottom: 22.67rem;
+  /* было 24.625rem */
 }
 
 .trademarks {
