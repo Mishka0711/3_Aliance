@@ -473,11 +473,10 @@ body {
 
 .trademark {
   display: flex;
-  gap: 3.125rem;
   padding: 3.125rem;
-  padding-top: 3.125rem;
+  /* padding-top: 3.125rem;
   padding-left: 3.125rem;
-  padding-right: 3.125rem;
+  padding-right: 3.125rem; */
   flex-basis: 50%;
   border: 1px solid #ebebf0;
   position: relative;
@@ -495,6 +494,13 @@ body {
 
 .trademark:hover {
   border-color: #5c8ee6;
+}
+
+.tm-container {
+  display: flex;
+  gap: 3.125rem;
+  align-items: center;
+  justify-content: center;
 }
 
 .tm-image-container {
@@ -522,7 +528,8 @@ body {
   transition: color 0.3s;
 }
 
-.tm-text-bg {
+.tm-text-bg,
+.tm-text-sm {
   margin-right: 1.875rem;
   color: #828a99;
   font-size: 1rem;
@@ -797,5 +804,34 @@ body {
   }
   .steps-item {
     max-width: 100%;
+  }
+
+  .tm-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.875rem;
+  }
+
+  .tm-image-container {
+    width: 6.25rem;
+    min-height: 6.25rem;
+  }
+
+  .tm-image {
+    max-height: 100%;
+    max-width: 100%;
+  }
+
+  .trademark {
+    flex-wrap: wrap;
+    padding: 1.875rem;
+  }
+  .tm-text-bg {
+    display: none;
+  }
+
+  .tm-text-sm {
+    display: block;
   }
 }
