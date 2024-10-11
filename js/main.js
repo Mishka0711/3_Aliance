@@ -1,15 +1,21 @@
 const navbar = document.querySelector(".navbar");
-const logo = document.querySelector(".logo-svg use");
+//const logo = document.querySelector(".logo-svg use"); //старый режим смены логотипа
+const logoLight = document.querySelector(".logo-light"); //новый режим смены логотипа
+const logo = document.querySelector(".logo"); //новый режим смены логотипа
 const mMenuToggle = document.querySelector(".mobile-menu-toggle");
 const menu = document.querySelector(".mobile-menu");
 
 const lightModeOn = (event) => {
   navbar.classList.add("navbar-light");
-  logo.href.baseVal = "img/sprite.svg#logo";
+  logo.style.display = "block"; //новый режим смены логотипа
+  logoLight.style.display = "none"; //новый режим смены логотипа
+  // logo.href.baseVal = "img/sprite.svg#logo";//старый режим смены логотипа
 };
 const lightModeOff = (event) => {
   navbar.classList.remove("navbar-light");
-  logo.href.baseVal = "img/sprite.svg#logo";
+  logo.style.display = "none"; //новый режим смены логотипа
+  logoLight.style.display = "block"; //новый режим смены логотипа
+  // logo.href.baseVal = "img/sprite.svg#logo";//старый режим смены логотипа
 };
 
 const openMenu = (event) => {
