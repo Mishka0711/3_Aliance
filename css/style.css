@@ -270,6 +270,10 @@ body::-webkit-scrollbar {
   width: 18rem;
 }
 
+.swiper {
+  height: 268px;
+}
+
 .slider-buttons {
   display: none;
   height: 44px;
@@ -467,7 +471,7 @@ body::-webkit-scrollbar {
   font-size: 1rem;
   line-height: 160%;
   text-align: left;
-  margin-bottom: 22.67rem;
+  margin-bottom: 23.37rem;
   /* было 24.625rem */
 }
 
@@ -590,6 +594,11 @@ body::-webkit-scrollbar {
     padding-left: 2rem;
     padding-right: 2rem;
   }
+
+  .swiper {
+    height: auto;
+  }
+
   .slider-buttons {
     display: flex;
   }
