@@ -82,6 +82,7 @@ const swiper2 = new Swiper(".swiper2", {
     prevEl: ".steps-slider-button-prev",
     nextEl: ".steps-slider-button-next",
   },
+
   // Responsive breakpoints
 
   breakpoints: {
