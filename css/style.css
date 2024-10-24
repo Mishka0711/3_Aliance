@@ -62,6 +62,19 @@ body::-webkit-scrollbar {
 .navbar-light {
   background-color: white;
   color: #292d33;
+}
+
+.logo-dark {
+  display: none;
+}
+
+.navbar-light .logo-light {
+  display: none;
+}
+.navbar-light .logo-dark {
+  display: block;
+}
+.navbar-scroll {
   height: 4.5rem;
 }
 
@@ -69,7 +82,7 @@ body::-webkit-scrollbar {
   fill: #5c8ee6;
 }
 
-.logo {
+.logo-dark {
   display: none;
 }
 
@@ -1125,6 +1138,112 @@ body::-webkit-scrollbar {
   padding: 1.2rem 3.75rem;
 }
 
+ul.breadcrumb {
+  list-style: none;
+  padding: 0;
+}
+
+/* Отображение элементов списка бок о бок */
+ul.breadcrumb li {
+  display: inline;
+  font-size: 14px;
+}
+
+/* Добавить символ косой черты (/) перед/за каждым элементом списка */
+ul.breadcrumb_light li + li:before {
+  padding: 0.375rem;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 160%;
+  content: "—\00a0";
+  color: rgb(130, 138, 153);
+}
+
+/* Добавить цвет для всех ссылок внутри списка */
+ul.breadcrumb_light li a {
+  text-decoration: none;
+  color: rgb(130, 138, 153);
+}
+
+ul.breadcrumb_light li:last-child a {
+  color: rgb(41, 45, 51);
+}
+
+/* Добавить цвет на наведении курсора мыши */
+ul.breadcrumb_light li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}
+
+.header_inner1 {
+  position: relative;
+  padding-top: 9rem;
+  padding-bottom: 2.1875rem;
+  /* padding-bottom: 100px; */
+  /* margin-top: 9.375rem; */
+  /* padding-bottom: 100px; */
+  z-index: 1;
+}
+
+.section-title-about {
+  color: #292d33;
+  font-family: "Bebas Neue book";
+  font-size: 5rem;
+  line-height: 110%;
+  margin-top: 1.5625rem;
+  letter-spacing: 0.6px;
+  margin-bottom: 2rem;
+}
+
+.pr-autohim-title-image {
+  position: absolute;
+  bottom: 0;
+  right: 15rem;
+  height: 15rem;
+}
+
+.blog-image {
+  background-image: url("../img/blog-photo2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  padding-top: 0;
+}
+
+.blog-image::before {
+  content: "";
+  position: absolute;
+  background: rgba(41, 45, 51, 0.6);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+ul.breadcrumb_dark li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+ul.breadcrumb_dark li + li:before {
+  padding: 0.375rem;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 160%;
+  content: "—\00a0";
+  color: #fff;
+}
+
+.header-content-blog {
+  padding-top: 9rem;
+}
+
+.header-title-blog {
+  margin: 1.4375rem 0 1.7rem 0;
+}
+
 @media (max-width: 1700px) {
   html {
     font-size: 14px;
@@ -1301,6 +1420,12 @@ body::-webkit-scrollbar {
   }
   .footer-phone {
     margin-right: 200px;
+  }
+  .pr-autohim-title-image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 10rem;
   }
 }
 
@@ -1491,7 +1616,9 @@ body::-webkit-scrollbar {
     max-width: 40rem;
   }
 
-  .header-title {
+  .header-title,
+  .section-title-about,
+  .header-title-blog {
     font-size: 4rem;
     margin: 1.4375rem 0 1.1rem 0;
   }
@@ -1577,6 +1704,10 @@ body::-webkit-scrollbar {
   }
   .footer-info {
     width: 100%;
+  }
+
+  .pr-autohim-title-image {
+    display: none;
   }
 }
 
