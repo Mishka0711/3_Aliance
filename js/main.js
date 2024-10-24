@@ -121,3 +121,40 @@ const swiperBlog = new Swiper(".blog-slider", {
     },
   },
 });
+
+const modal = document.querySelector(".modal");
+const modalToggle = document.querySelectorAll("[data-toggle=modal]");
+const modalClose = document.querySelector(".modal-close");
+const modal2 = document.querySelector(".modal-dialog");
+
+modalToggle.forEach((element) => {
+  element.addEventListener("click", (event) => {
+    event.preventDefault();
+    modal.classList.add("is-open");
+  });
+});
+
+modalClose.addEventListener("click", (event) => {
+  event.preventDefault();
+  modal.classList.remove("is-open");
+});
+
+// modal2.addEventListener("click", (event) => {
+//   event.preventDefault();
+//   modal.classList.remove("is-open");
+// });
+
+document.addEventListener("keydown", function (e) {
+  if (e.keyCode == 27) {
+    event.preventDefault();
+    modal.classList.remove("is-open");
+  }
+});
+document.addEventListener("click", (n) => {
+  const withinBoundaries = n.composedPath().includes(modal2);
+  if (!withinBoundaries) {
+    event.preventDefault();
+    // modal.classList.remove("is-open");
+    console.log(n);
+  }
+});
