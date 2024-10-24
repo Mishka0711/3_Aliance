@@ -123,38 +123,55 @@ const swiperBlog = new Swiper(".blog-slider", {
 });
 
 const modal = document.querySelector(".modal");
-const modalToggle = document.querySelectorAll("[data-toggle=modal]");
-const modalClose = document.querySelector(".modal-close");
-const modal2 = document.querySelector(".modal-dialog");
+const modalDialog = document.querySelector(".modal-dialog");
 
-modalToggle.forEach((element) => {
-  element.addEventListener("click", (event) => {
+document.addEventListener("click", (event) => {
+  if (
+    event.target.dataset.toggle == "modal" ||
+    event.target.parentNode.dataset.toggle == "modal" ||
+    (!event.composedPath().includes(modalDialog) &&
+      modal.classList.contains("is-open"))
+  ) {
     event.preventDefault();
-    modal.classList.add("is-open");
-  });
+    modal.classList.toggle("is-open");
+  }
 });
-
-modalClose.addEventListener("click", (event) => {
-  event.preventDefault();
-  modal.classList.remove("is-open");
-});
-
-// modal2.addEventListener("click", (event) => {
-//   event.preventDefault();
-//   modal.classList.remove("is-open");
-// });
-
-document.addEventListener("keydown", function (e) {
-  if (e.keyCode == 27) {
+document.addEventListener("keyup", (event) => {
+  if (event.key == "Escape" && modal.classList.contains("is-open")) {
     event.preventDefault();
     modal.classList.remove("is-open");
   }
 });
-document.addEventListener("click", (n) => {
-  const withinBoundaries = n.composedPath().includes(modal2);
-  if (!withinBoundaries) {
-    event.preventDefault();
-    // modal.classList.remove("is-open");
-    console.log(n);
-  }
-});
+
+// modalToggle.forEach((element) => {
+//   element.addEventListener("click", (event) => {
+//     event.preventDefault ();
+//     modal.classList.add("is-open");
+//   });
+// });
+
+// const modalToggle = document.querySelectorAll("[data-toggle=modal]");
+// const modalClose = document.querySelector(".modal-close");
+
+// modalClose.addEventListener("click", (event) => {
+//   event.preventDefault();
+//   modal.classList.remove("is-open");
+// });
+
+// //ДЗ к уроку модальное окно
+// document.addEventListener("keydown", function (e) {
+//   if (e.keyCode == 27) {
+//     event.preventDefault();
+//     modal.classList.remove("is-open");
+//   }
+// });
+
+//не работает закрытие по клику на фон вне окна
+// document.addEventListener("click", (event) => {
+//   const withinBoundaries = event.composedPath().includes(modalDialog);
+//   if (!withinBoundaries) {
+//     event.preventDefault();
+//        modal.classList.remove("is-open");
+//      console.log(event.target);
+//   }
+// });
