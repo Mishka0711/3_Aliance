@@ -17,6 +17,8 @@
                   class="input"
                   name="username"
                   placeholder=" "
+                  maxlength="100"
+                  required
                 />
                 <label class="input-group-label" for="user-name">Имя</label>
               </div>
@@ -28,6 +30,8 @@
                   class="input"
                   name="userphone"
                   placeholder=" "
+                  maxlength="30"
+                  required
                 />
                 <label class="input-group-label" for="user-phone"
                   >Номер телефона</label
@@ -194,14 +198,17 @@
           ответит на все интересующие вопросы и поможем даже в самых сложных
           случаях!
         </p>
-        <form action="" class="modal-form">
+        <form action="/handler.php" method="POST" class="modal-form">
           <div class="input-group-wrapper input-group-vertical">
             <div class="input-group modal-input-group">
               <input
                 id="modal-user-name"
                 type="text"
                 class="input modal-input"
+                name="username"
                 placeholder=" "
+                maxlength="100"
+                required
               />
               <label
                 class="input-group-label modal-input-label"
@@ -215,7 +222,10 @@
                 id="modal-user-phone"
                 type="tel"
                 class="input modal-input"
+                name="userphone"
                 placeholder=" "
+                maxlength="30"
+                required
               />
               <label
                 class="input-group-label modal-input-label"
