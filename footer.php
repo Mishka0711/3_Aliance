@@ -27,7 +27,7 @@
                 <input
                   id="user-phone"
                   type="tel"
-                  class="input"
+                  class="input phone-mask"
                   name="userphone"
                   placeholder=" "
                   maxlength="30"
@@ -221,7 +221,7 @@
               <input
                 id="modal-user-phone"
                 type="tel"
-                class="input modal-input"
+                class="input modal-input phone-mask"
                 name="userphone"
                 placeholder=" "
                 maxlength="30"
@@ -255,4 +255,30 @@
       </div>
     </div>
     <!-- modal -->
-  </section>
+
+    <div class="modal-thanks">
+      <div class="modal-dialog modal-dialog-thanks">        
+        <img src="/img/thanks_illu.png" alt="thanks-you" class="modal-image" />
+      
+        <a href="#" class="modal-close modal-close-thanks" data-toggle="modal-thanks">
+          <svg class="close-icon" width="24" height="24">
+            <use href="img/sprite.svg#mw_close"></use>
+          </svg>
+        </a>
+        <h2 class="modal-title modal-title-thanks">Спасибо за заявку!</h2>
+        <p class="modal-text modal-text-thanks">
+          Наш менеджер свяжется с Вами в ближайшее время ответит на все интересующие вопросы и поможем даже в самых сложных случаях!
+        </p>
+        <button type="reset" class="button modal-form-button mf-btn-thanks">
+        Вернуться на главную
+        <!-- <a href="../index.php"></a> -->          
+        </button>
+
+      </div>
+    </div>
+    <!-- modal-thanks -->
+    
+  </section>  
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/just-validate.production.min.js"></script>
+  <script src="js/main.js"></script>

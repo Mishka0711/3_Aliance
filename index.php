@@ -151,7 +151,7 @@
         <div class="header-content">
           <div class="separator"></div>
           <h1 class="header-title">
-            <?php  echo "Главная страница"; ?>
+            <?php  echo "Комплексное обеспечение товарами и расходными материалами бизнеса"; ?>
           </h1>
           <p class="header-text">
             Высокий уровень вовлечения представителей целевой аудитории является
@@ -637,7 +637,6 @@
     </section>
 
     <? include_once('footer.php');?>
-    <script src="js/swiper-bundle.min.js"></script>
-    <script src="js/main.js"></script>
+
     </body>
 </html>

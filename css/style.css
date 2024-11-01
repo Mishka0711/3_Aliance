@@ -871,6 +871,22 @@ body::-webkit-scrollbar {
   font-size: 0.625rem;
   background-color: inherit;
 }
+.input.is-invalid {
+  border: 1px solid red;
+}
+
+.just-validate-error-label {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  background-color: inherit;
+  transform: translateY(-50%);
+  display: inline-block;
+  font-size: 0.8rem;
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+}
+
 .cta-form-footer {
   display: flex;
   align-items: center;
@@ -1053,7 +1069,8 @@ body::-webkit-scrollbar {
   gap: 10px;
 }
 
-.modal {
+.modal,
+.modal-thanks {
   opacity: 0;
   visibility: hidden;
   transform: translateX(-100%);
@@ -1069,13 +1086,15 @@ body::-webkit-scrollbar {
   justify-content: center;
 }
 
-.modal.is-open {
+.modal.is-open,
+.modal-thanks.is-open {
   transform: translateX(0);
   visibility: visible;
   opacity: 1;
 }
 
-.modal.is-open .modal-dialog {
+.modal.is-open .modal-dialog,
+.modal-thanks.is-open .modal-dialog {
   transform: translateY(0);
   opacity: 1;
 }
@@ -1244,6 +1263,23 @@ ul.breadcrumb_dark li + li:before {
   margin: 1.4375rem 0 1.7rem 0;
 }
 
+.modal-image {
+  width: 100%;
+}
+
+.modal-dialog-thanks {
+  padding: 2.5rem 3.125rem;
+}
+
+.modal-title-thanks {
+  margin-top: 1.875rem;
+  margin-bottom: 1.25rem;
+}
+
+.modal-text-thanks {
+  margin-bottom: 1.875rem;
+}
+
 @media (max-width: 1700px) {
   html {
     font-size: 14px;
@@ -1279,6 +1315,23 @@ ul.breadcrumb_dark li + li:before {
 
   .cta-form {
     z-index: 1;
+  }
+  .modal-dialog-thanks {
+    padding: 30px;
+  }
+
+  .modal-close-thanks {
+    right: 30px;
+    top: 30px;
+  }
+
+  .modal-title-thanks {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .modal-text-thanks {
+    margin-bottom: 20px;
   }
 }
 
