@@ -138,7 +138,7 @@
         >
       </div>
       <!-- /.header-phone -->
-      <button class="navbar-button button" data-toggle="modal">
+      <button class="navbar-button button" data-toggle="modal"  data-target="#feedback-modal">
         <svg class="button-icon" width="24" height="24">
           <use href="img/sprite.svg#phone"></use>
         </svg>
@@ -159,7 +159,7 @@
             будущего проекта напрямую зависит от анализа существующих паттернов
             поведения.
           </p>
-          <div class="company-button button">Подробнее о компании</div>
+          <button class="company-button button" data-toggle="modal" data-target="#feedback-modal">Подробнее о компании</button>
         </div>
         <!-- /.header-content -->
 

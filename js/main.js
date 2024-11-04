@@ -131,77 +131,83 @@ const swiperBlog = new Swiper(".blog-slider", {
   },
 });
 
-const modal = document.querySelector(".modal");
-const modalThanks = document.querySelector(".modal-thanks");
-const modalDialog = document.querySelector(".modal-dialog");
-const modalDialogThanks = document.querySelector(".modal-dialog-thanks");
-const modalCloseThanks = document.querySelector(".mf-btn-thanks");
-
-document.addEventListener("click", (event) => {
-  if (
-    event.target.dataset.toggle == "modal" ||
-    event.target.parentNode.dataset.toggle == "modal" ||
-    (!event.composedPath().includes(modalDialog) &&
-      modal.classList.contains("is-open"))
-  ) {
+let currentModal; //текущее модельное окно
+let modalDialog; //белое диалоговое окно
+let alertModal = document.querySelector("#alert-modal"); //окно с предупреждением
+// находим вызыватели или переключатели модальных окон
+const modalButtons = document.querySelectorAll("[data-toggle=modal]");
+modalButtons.forEach((button) => {
+  button.addEventListener("click", (event) => {
+    //отмена стандартного поведения при клике
     event.preventDefault();
-    modal.classList.toggle("is-open");
-  }
-  if (
-    event.target.dataset.toggle == "modal-thanks" ||
-    event.target.parentNode.dataset.toggle == "modal-thanks" ||
-    (!event.composedPath().includes(modalDialogThanks) &&
-      modalThanks.classList.contains("is-open"))
-  ) {
-    event.preventDefault();
-    modalThanks.classList.toggle("is-open");
-  }
+    //клик по переключателю
+    // определяем текущее открытое окно
+    currentModal = document.querySelector(button.dataset.target);
+    //открываем текущее окно присваивая класс is-open
+    currentModal.classList.toggle("is-open");
+    //назначаем новое диалоговое окно
+    modalDialog = currentModal.querySelector(".modal-dialog");
+    modal_to_main = currentModal.querySelector(".mf-btn-thanks");
+    console.log(button.dataset.target);
+    //отслеживаем события клика внутри диалогового окна, клик по окну и пустым областям
+    currentModal.addEventListener("click", (event) => {
+      //если клик в пустую область вне окна, закрываем окно удаляя класс
+      if (!event.composedPath().includes(modalDialog)) {
+        //закрытие окна
+        currentModal.classList.remove("is-open");
+      }
+    });
+  });
 });
 
-modalCloseThanks.addEventListener("click", (event) => {
-  event.preventDefault();
-  modalThanks.classList.remove("is-open");
-  document.location.href = "/";
+//костыль который при отправке заявки через СТА минуя первую модалку, заранее устанавливает currentModal
+const staButton = document.querySelector(".cta-form-button");
+staButton.addEventListener("click", (event) => {
+  // console.log("click");
+  currentModal = alertModal;
 });
 
+//отлавливаем событие нажатия на кнопки
 document.addEventListener("keyup", (event) => {
-  if (event.key == "Escape" && modal.classList.contains("is-open")) {
+  //проверка что это escape и текущее окно открыто( склассом из-опен). Если все ок то окно закрывается
+  if (event.key == "Escape" && currentModal.classList.contains("is-open")) {
     event.preventDefault();
-    modal.classList.remove("is-open");
-  }
-  if (event.key == "Escape" && modalThanks.classList.contains("is-open")) {
-    event.preventDefault();
-    modalThanks.classList.remove("is-open");
+    currentModal.classList.toggle("is-open");
   }
 });
 
 const forms = document.querySelectorAll("form"); //Собираем все формы
 
+//Перебираем каждую форму через foreach
 forms.forEach((form) => {
+  //создаем новый обьект для проверки
   const validation = new JustValidate(form, {
     errorFieldCssClass: "is-invalid",
   });
   validation
+    //проверка поля для ввода фио
     .addField("[name=username]", [
       {
+        //если ничего не введено
         rule: "required",
         errorMessage: "Укажите имя",
       },
       {
+        // если превышено макс символов
         rule: "maxLength",
         value: 50,
         errorMessage: "Максимально 50 символов",
       },
     ])
+    //проверка поля ввода номера
     .addField("[name=userphone]", [
       {
+        // если ничего не найдено
         rule: "required",
-        validator: (value) => {
-          return value[0] === "+?(???)???-??-??";
-        },
         errorMessage: "Укажите телефон",
       },
     ])
+    // в случае успешной проверки полей берем данные формы и через указанный метод отправляем на хэндлер
     .onSuccess((event) => {
       const thisForm = event.target; //Наша форма
       const formData = new FormData(thisForm); //данные из нашей форсы
@@ -209,12 +215,32 @@ forms.forEach((form) => {
         fetch(thisForm.getAttribute("action"), {
           method: thisForm.getAttribute("method"),
           body: formData,
+          // если ответ 200 то закрываем модалку с полями и открываем модалку с подтверждением
         }).then((response) => {
           if (response.ok) {
             thisForm.reset();
-            event.preventDefault();
-            modal.classList.toggle("is-open");
-            modalThanks.classList.toggle("is-open");
+            //у текущего модокна удаляем класс из-опен(делаем невидимым) здесть получается финт, что если идет через 2 модалки то логично что закрывает сначала предыдущую, а если через cta то он просто впустую  отнимает класс которого нет потом снова его присваивая. но думаю сойдет
+            currentModal.classList.remove("is-open");
+            currentModal = alertModal;
+            currentModal.classList.add("is-open");
+            modalDialog = currentModal.querySelector(".modal-dialog");
+            //отслеживаем события клика внутри диалогового окна, клик по окну и пустым областям
+
+            currentModal.addEventListener("click", (event) => {
+              //если клик в пустую область вне окна, закрываем окно удаляя класс
+              if (!event.composedPath().includes(modalDialog)) {
+                //закрытие окна
+                currentModal.classList.remove("is-open");
+              }
+              if (event.composedPath().includes(modal_to_main)) {
+                //возврат к главной странице
+                document.location.href = "/";
+              }
+            });
+            // event.preventDefault();
+            // currentModal.classList.toggle("is-open");
+            // modalThanks.classList.toggle("is-open");
+            //document.location.href = "/";
           } else {
             alert(response.statusText);
           }

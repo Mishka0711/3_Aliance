@@ -41,7 +41,7 @@
             </div>
             <!-- /.input-group-wrapper -->
             <div class="cta-form-footer">
-              <button type="submit" class="button cta-form-button">
+              <button type="submit" class="button cta-form-button" >
                 Отправить заявку
               </button>
               <div class="notify">
@@ -185,10 +185,10 @@
         </div>
       </div>
     </footer>
-    <div class="modal">
+    <div class="modal" id="feedback-modal">
       <div class="modal-dialog">
         <h2 class="modal-title">Есть вопросы?</h2>
-        <a href="#" class="modal-close" data-toggle="modal">
+        <a href="#" class="modal-close" data-toggle="modal" data-target="#feedback-modal">
           <svg class="close-icon" width="24" height="24">
             <use href="img/sprite.svg#mw_close"></use>
           </svg>
@@ -256,11 +256,11 @@
     </div>
     <!-- modal -->
 
-    <div class="modal-thanks">
+    <div class="modal-thanks" id="alert-modal">
       <div class="modal-dialog modal-dialog-thanks">        
         <img src="/img/thanks_illu.png" alt="thanks-you" class="modal-image" />
       
-        <a href="#" class="modal-close modal-close-thanks" data-toggle="modal-thanks">
+        <a href="#" class="modal-close modal-close-thanks" data-toggle="modal" data-target="#alert-modal">
           <svg class="close-icon" width="24" height="24">
             <use href="img/sprite.svg#mw_close"></use>
           </svg>
@@ -269,7 +269,7 @@
         <p class="modal-text modal-text-thanks">
           Наш менеджер свяжется с Вами в ближайшее время ответит на все интересующие вопросы и поможем даже в самых сложных случаях!
         </p>
-        <button type="reset" class="button modal-form-button mf-btn-thanks">
+        <button type="reset" class="button modal-form-button mf-btn-thanks" data-toggle="modal" data-target="#alert-modal">
         Вернуться на главную
         <!-- <a href="../index.php"></a> -->          
         </button>
