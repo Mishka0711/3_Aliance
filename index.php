@@ -19,13 +19,13 @@
     <div class="mobile-menu">
       <ul class="mobile-menu-nav">
         <li class="mobile-menu-nav-item">
-          <a href="/about.php" class="mobile-menu-link">О компании</a>
+          <a href="./about.php" class="mobile-menu-link">О компании</a>
         </li>
         <li class="mobile-menu-nav-item">
-          <a href="#" class="mobile-menu-link">Контрактное производство</a>
+          <a href="./contracts.php" class="mobile-menu-link">Контрактное производство</a>
           <ul class="mobile-submenu">
             <li class="mobile-submenu-item">
-              <a href="#" class="mobile-submenu-link">Автомобильная химия</a>
+              <a href="./product_autohim.php" class="mobile-submenu-link">Автомобильная химия</a>
             </li>
             <li class="mobile-submenu-item">
               <a href="#" class="mobile-submenu-link">Бытовая химия</a>
@@ -46,10 +46,10 @@
           </ul>
         </li>
         <li class="mobile-menu-nav-item">
-          <a href="#" class="mobile-menu-link">Собственные торговые марки</a>
+          <a href="./trademarks.php" class="mobile-menu-link">Собственные торговые марки</a>
           <ul class="mobile-submenu">
             <li class="mobile-submenu-item">
-              <a href="#" class="mobile-submenu-link">Автохимия AG-Tech</a>
+              <a href="./AG-Tech.php" class="mobile-submenu-link">Автохимия AG-Tech</a>
             </li>
             <li class="mobile-submenu-item">
               <a href="#" class="mobile-submenu-link">Автохимия AP</a>
@@ -117,10 +117,10 @@
           <a href="/about.php" class="header-nav-link">О компании</a>
         </li>
         <li class="header-nav-item">
-          <a href="#" class="header-nav-link">Контрактное производство</a>
+          <a href="./contracts.php" class="header-nav-link">Контрактное производство</a>
         </li>
         <li class="header-nav-item">
-          <a href="#" class="header-nav-link">Собственные торговые марки</a>
+          <a href="./trademarks.php" class="header-nav-link">Собственные торговые марки</a>
         </li>
         <li class="header-nav-item">
           <a href="#" class="header-nav-link">Новости</a>
@@ -207,12 +207,12 @@
           <!-- кнопки вперед назад -->
           <div class="primary-buttons-wrapper slider-buttons">
             <div class="slider-button-prev">
-              <svg width="36" height="24">
+              <svg class="button-arrow-wh" width="36" height="24">
                 <use href="img/sprite.svg#arrow-prev"></use>
               </svg>
             </div>
             <div class="slider-button-next">
-              <svg width="36" height="24">
+              <svg class="button-arrow-wh" width="36" height="24">
                 <use href="img/sprite.svg#arrow-next"></use>
               </svg>
             </div>
@@ -267,12 +267,12 @@
           <!-- кнопки вперед назад -->
           <div class="steps-slider-buttons primary-buttons-wrapper">
             <div class="steps-slider-button-prev primary-button-prev">
-              <svg class="features-icon" width="36" height="24">
+              <svg class="features-icon button-arrow-wh" width="36" height="24">
                 <use href="img/sprite.svg#arrow-prev"></use>
               </svg>
             </div>
             <div class="steps-slider-button-next primary-button-next">
-              <svg class="features-icon" width="36" height="24">
+              <svg class="features-icon button-arrow-wh" width="36" height="24">
                 <use href="img/sprite.svg#arrow-next"></use>
               </svg>
             </div>
@@ -286,7 +286,7 @@
         <div class="separator"></div>
         <h2 class="section-title">Контрактное производство</h2>
         <div class="cards">
-          <a href="#" class="card">
+          <a href="./product_autohim.php" class="card">
             <div class="card-content">
               <h3 class="card-title">Автомобильная химия</h3>
               <p class="card-text">
@@ -385,46 +385,12 @@
       </div>
     </section>
 
-    <div class="section section-trademark">
-      <div class="container">
-        <div class="separator"></div>
-        <h2 class="section-title section-title_full">
-          собственные торговые марки
-        </h2>
-        <h2 class="section-title section-title_375px">собственные марки</h2>
-        <div class="trademark-cards">
-          <div class="trademark-card">
-            <svg class="trademark-card-logo">
-              <use href="img/sprite.svg#AGTECH"></use>
-            </svg>
-            <h3 class="trademark-card-title">Автохимия AG-Tech</h3>
-            <p class="trademark-card-text">
-              Для современного мира разбавленное изрядной долей эмпатии,
-              рациональное мышление создаёт предпосылки для поставленных
-              обществом задач.
-            </p>
-          </div>
-          <div class="trademark-card">
-            <svg class="trademark-card-logo">
-              <use href="img/sprite.svg#AP"></use>
-            </svg>
-            <h3 class="trademark-card-title">Автохимия AP</h3>
-            <p class="trademark-card-text">
-              Для современного мира разбавленное изрядной долей эмпатии,
-              рациональное мышление создаёт предпосылки для поставленных
-              обществом задач.
-            </p>
-          </div>
-        </div>
-        <!-- /.trademark-cards -->
-      </div>
-      <!-- /.container -->
-    </div>
-    <!-- /.section section trademark -->
+    <?php $block_title= "Собственные торговые марки"; include_once('./template-parts/trademarks-block.php')?>
+
     <section class="section founder">
-      <img src="img/founder.jpg" alt="" class="founder-photo" />
+      <img src="img/founder.jpg" alt="" class="founder-photo founder-photo-left" />
       <div class="container">
-        <div class="founder-content-wrapper">
+        <div class="founder-content-wrapper  f-c-w-right">
           <div class="founder-content">
             <div class="separator"></div>
             <h2 class="section-title section-title-founder">
@@ -618,12 +584,12 @@
             <!-- кнопки вперед назад -->
             <div class="blog-buttons primary-buttons-wrapper">
               <div class="blog-button-prev primary-button-prev">
-                <svg width="36" height="24">
+                <svg class="button-arrow-wh" width="36" height="24">
                   <use href="img/sprite.svg#arrow-prev"></use>
                 </svg>
               </div>
-              <div class="blog-button-next primary-button-prev">
-                <svg width="36" height="24">
+              <div class="blog-button-next primary-button-prev ">
+                <svg class="button-arrow-wh" width="36" height="24">
                   <use href="img/sprite.svg#arrow-next"></use>
                 </svg>
               </div>
@@ -638,5 +604,3 @@
 
     <? include_once('footer.php');?>
 
-    </body>
-</html>

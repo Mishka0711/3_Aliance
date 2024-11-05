@@ -1,310 +1,97 @@
-<!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="./css/normalize.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <title>О компании</title>
-  </head>
-  <body>
-    <div class="mobile-menu">
-      <ul class="mobile-menu-nav">
-        <li class="mobile-menu-nav-item">
-          <a href="#" class="mobile-menu-link">О компании</a>
-        </li>
-        <li class="mobile-menu-nav-item">
-          <a href="#" class="mobile-menu-link">Контрактное производство</a>
-          <ul class="mobile-submenu">
-            <li class="mobile-submenu-item">
-              <a href="#" class="mobile-submenu-link">Автомобильная химия</a>
-            </li>
-            <li class="mobile-submenu-item">
-              <a href="#" class="mobile-submenu-link">Бытовая химия</a>
-            </li>
-            <li class="mobile-submenu-item">
-              <a href="#" class="mobile-submenu-link"
-                >Дезинфицирующие средства"</a
-              >
-            </li>
-            <li class="mobile-submenu-item">
-              <a href="#" class="mobile-submenu-link">Пищевые аэрозоли</a>
-            </li>
-            <li class="mobile-submenu-item">
-              <a href="#" class="mobile-submenu-link"
-                >Косметическая продукция</a
-              >
-            </li>
-          </ul>
-        </li>
-        <li class="mobile-menu-nav-item">
-          <a href="#" class="mobile-menu-link">Собственные торговые марки</a>
-          <ul class="mobile-submenu">
-            <li class="mobile-submenu-item">
-              <a href="#" class="mobile-submenu-link">Автохимия AG-Tech</a>
-            </li>
-            <li class="mobile-submenu-item">
-              <a href="#" class="mobile-submenu-link">Автохимия AP</a>
-            </li>
-          </ul>
-        </li>
-        <li class="mobile-menu-nav-item">
-          <a href="#" class="mobile-menu-link">Новости</a>
-        </li>
-        <li class="mobile-menu-nav-item">
-          <a href="#" class="mobile-menu-link">Контакты</a>
-        </li>
-      </ul>
-      <a href="tel:+74996861014" class="mobile-phone">+7 (499) 686-10-14</a>
-      <div class="mobile-info">
-        <svg class="phone-icon">
-          <use href="img/sprite.svg#mestop"></use>
-        </svg>
-        <address class="mobile-info-adress">
-          г. Мосвка, Холодильный пер. 4к1с8
-        </address>
-      </div>
-      <div class="mobile-info">
-        <svg class="phone-icon">
-          <use href="img/sprite.svg#mail"></use>
-        </svg>
-        <a href="mailto:a.dragunov@tdaliance.ru" class="mobile-info-email">
-          a.dragunov@tdaliance.ru
-        </a>
-      </div>
-      <!-- /.mobile-info -->
-      <div class="social-info">
-        <a href="#" class="social-logo">
-          <svg class="social-icon">
-            <use href="img/sprite.svg#VK"></use>
-          </svg>
-        </a>
-        <a href="#" class="social-logo">
-          <svg class="social-icon">
-            <use href="img/sprite.svg#inst"></use>
-          </svg>
-        </a>
-      </div>
-      <!-- /.social -->
-    </div>
-    <nav class="navbar navbar-light">
-      <a href="#" class="mobile-menu-toggle">
-        <div class="mobile-menu-line"></div>
-        <div class="mobile-menu-line"></div>
-        <div class="mobile-menu-line"></div>
-      </a>
-      <a href="./" class="header-logo">
-        <svg class="logo-svg logo-light">
-          <use href="img/sprite.svg#logo-light"></use>
-        </svg>
-        <svg class="logo-svg logo-dark">
-          <use href="img/sprite.svg#logo"></use>
-        </svg>
-        <!-- <svg class="logo-svg"> старый режим логотипа
-          <use href="img/sprite.svg#logo-light"></use>
-        </svg> -->
-      </a>
-      <ul class="header-nav">
-        <li class="header-nav-item">
-          <a href="#" class="header-nav-link">О компании</a>
-        </li>
-        <li class="header-nav-item">
-          <a href="#" class="header-nav-link">Контрактное производство</a>
-        </li>
-        <li class="header-nav-item">
-          <a href="#" class="header-nav-link">Собственные торговые марки</a>
-        </li>
-        <li class="header-nav-item">
-          <a href="#" class="header-nav-link">Новости</a>
-        </li>
-        <li class="header-nav-item">
-          <a href="#" class="header-nav-link">Контакты</a>
-        </li>
-      </ul>
-      <div class="header-phone">
-        <svg class="phone-icon">
-          <use href="img/sprite.svg#phone"></use>
-        </svg>
-        <a href="tel:+74996861014" class="header-phone-link"
-          >+7 (499) 686-10-14</a
-        >
-      </div>
-      <!-- /.header-phone -->
-      <button class="navbar-button button" data-toggle="modal"  data-target="#feedback-modal">
-        <svg class="button-icon" width="24" height="24">
-          <use href="img/sprite.svg#phone"></use>
-        </svg>
-        <span class="button-text">Получить консультацию</span>
-      </button>
-    </nav>
-    <!-- /.navbar -->
+<?php 
+$page_title = 'О компании';
+$page_now = '../about.php';
+$breadcrumb_style = 'breadcrumb_light';
+$autohim_title_image_hidden = 'autohim-title-image-hidden';
+include_once('header-page.php')?>
 
-    <section class="bg-grey header_inner1">
-      <div class="container">
-        <div class="separator"></div>
-        <h1 class="section-title-about">О компании</h1>
-        <ul class="breadcrumb breadcrumb_light">
-          <li>
-            <a class="breadcrumb_li" href="../index.php">Главная</a>
-          </li>
-          <li><a class="breadcrumb_li" href="../about.php">О компании</a></li>
-        </ul>
-      </div>
-    </section>
-    <!-- section header_inner -->
-
-    <section class="section founder">
-      <img src="img/founder.jpg" alt="" class="founder-photo" />
-      <div class="container">
-        <div class="founder-content-wrapper">
-          <div class="founder-content">
-            <div class="separator"></div>
-            <h2 class="section-title section-title-founder">
-              Отношение к делу <br />
-              и к клиентам
-            </h2>
-            <p class="founder-text">
-              Кстати, интерактивные прототипы описаны максимально подробно.
-              Повседневная практика показывает, что укрепление и развитие
-              внутренней структуры говорит о возможностях соответствующих
-              условий активизации. Внезапно, независимые государства, которые
-              представляют собой яркий пример континентально-европейского типа
-              политической культуры, будут подвергнуты целой серии независимых
-              исследований. С учётом сложившейся международной обстановки,
-              синтетическое тестирование выявляет срочную потребность системы
-              массового участия.
-            </p>
-            <p class="founder-text founder-text2">
-              А ещё действия представителей оппозиции, превозмогая сложившуюся
-              непростую экономическую ситуацию, в равной степени предоставлены
-              сами себе. Не следует, однако, забывать, что выбранный нами
-              инновационный путь в значительной степени обусловливает важность
-              дальнейших направлений развития.
-            </p>
-            <a href="#" class="button-link">
-              <p class="founder-link-1920">Подробнее о компании</p>
-              <p class="founder-link-375">О нашей миссии</p></a
-            >
-          </div>
-          <!-- /.founder-content -->
-        </div>
-        <!-- /.founder-content-wrapper -->
-      </div>
-    </section>
-    <div class="section section clients">
-      <div class="container">
-        <div class="separator"></div>
-        <div class="clients-wrapper">
-          <div class="clients-content">
-            <h2 class="section-title section-title-client">
-              Производим аэрозольную продукцию для разных сфер
-            </h2>
-            <ul class="clients-list">
-              <li class="clients-list-item">
-                <svg width="30" height="30" class="client-list-icon">
-                  <use href="img/sprite.svg#cl_him"></use>
-                </svg>
-                Химические производства
-              </li>
-              <li class="clients-list-item">
-                <svg width="30" height="30" class="client-list-icon">
-                  <use href="img/sprite.svg#cl_car"></use>
-                </svg>
-                Автомойки
-              </li>
-              <li class="clients-list-item">
-                <svg width="30" height="30" class="client-list-icon">
-                  <use href="img/sprite.svg#cl_eat"></use>
-                </svg>
-                Пищевая продукция
-              </li>
-              <li class="clients-list-item">
-                <svg width="30" height="30" class="client-list-icon">
-                  <use href="img/sprite.svg#cl_brush"></use>
-                </svg>
-                Лаки и краски
-              </li>
-              <li class="clients-list-item">
-                <svg width="30" height="30" class="client-list-icon">
-                  <use href="img/sprite.svg#cl_cosmetic"></use>
-                </svg>
-                Косметические средства
-              </li>
-              <li class="clients-list-item">
-                <svg width="30" height="30" class="client-list-icon">
-                  <use href="img/sprite.svg#cl_car-cosm"></use>
-                </svg>
-                Автомобильная косметика
-              </li>
-              <li class="clients-list-item">
-                <svg width="30" height="30" class="client-list-icon">
-                  <use href="img/sprite.svg#cl_shirt"></use>
-                </svg>
-                Косметика по уходу за одеждой
-              </li>
-              <li class="clients-list-item">
-                <svg width="30" height="30" class="client-list-icon">
-                  <use href="img/sprite.svg#cl_boots"></use>
-                </svg>
-                Косметика по уходу за обувью
-              </li>
-              <li class="clients-list-item">
-                <svg width="30" height="30" class="client-list-icon">
-                  <use href="img/sprite.svg#cl_bricks"></use>
-                </svg>
-                Строительные материалы
-              </li>
-              <li class="clients-list-item">
-                <svg width="30" height="30" class="client-list-icon">
-                  <use href="img/sprite.svg#cl_more"></use>
-                </svg>
-                И многих других
-              </li>
-            </ul>
-          </div>
-          <!-- /.clients-content -->
-          <div class="clients-logo-list">
-            <div class="clients-logo-item">
-              <img src="img/client.png" alt="" class="clients-logo" />
-            </div>
-            <div class="clients-logo-item">
-              <img src="img/client.png" alt="" class="clients-logo" />
-            </div>
-            <div class="clients-logo-item">
-              <img src="img/client.png" alt="" class="clients-logo" />
-            </div>
-            <div class="clients-logo-item">
-              <img src="img/client.png" alt="" class="clients-logo" />
-            </div>
-            <div class="clients-logo-item">
-              <img src="img/client.png" alt="" class="clients-logo" />
-            </div>
-            <div class="clients-logo-item">
-              <img src="img/client.png" alt="" class="clients-logo" />
-            </div>
-            <div class="clients-logo-item">
-              <img src="img/client.png" alt="" class="clients-logo" />
-            </div>
-            <div class="clients-logo-item">
-              <img src="img/client.png" alt="" class="clients-logo" />
-            </div>
-            <div class="clients-logo-item">
-              <img src="img/client.png" alt="" class="clients-logo" />
-            </div>
-          </div>
-          <!-- /.clients-logo -->
-        </div>
-        <!-- /.clients-wrapper -->
-      </div>
-      <!-- /.container -->
+<section class="section about-main">
+  <div class="container">
+    <div class="about-main-content-wrapper">
+    <div class="about-main-img">
+        <img src="img/aliance.png" alt="" class="about-main-photo" />
     </div>
-    <!-- /.section section clients -->
-    <? include_once('footer.php');?>
+    <div class="about-main-content">
+        <div class="separator"></div>
+        <h2 class="section-title section-title-about-main">
+        мы - эксперты в области <br> производства химии
+        </h2>
+        <p class="about-main-text">
+        Разнообразный и богатый опыт говорит нам, что перспективное планирование однозначно фиксирует необходимость поставленных обществом задач! Есть над чем задуматься: ключевые особенности структуры проекта могут быть объединены в целые кластеры себе подобных. Интерактивные прототипы, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут описаны максимально подробно. Значимость этих проблем настолько очевидна, что перспективное планирование играет важную роль в формировании системы массового участия.
+        </p>            
+    </div>
+    <!-- /.about-main-content -->
+    </div>
+    <!-- /.content-wrapper -->
+  </div>
+  <!-- /.container -->
+</section>  
+
+
+<?php 
+$header_features_bl = 'header-features-bl';
+$header_features_item = 'header-features-item-bl';
+$slider_button_bl = 'slider-button-bl' ;
+$button_arrow_bl = 'button-arrow-bl';
+$swiper_bl = 'swiper-bl';
+include_once('./template-parts/slider-block.php');?>
+
+
+<!-- версия 2 блока с текстом и картинкой (в пределах контейнера)-->
+<?php 
+$our_production_title='Наше производство';
+$our_ph_name = 'our_production.png';
+$grid_img_position = 'grid_right_img';
+//порядок элементов блока при адаптивности сверху вниз
+$adp_elem_order = 'tit_img_txt';
+$our_production_text = 'Предварительные выводы неутешительны: разбавленное изрядной долей эмпатии, рациональное мышление обеспечивает широкому кругу (специалистов) участие в формировании глубокомысленных рассуждений. Но граница обучения кадров создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса кластеризации усилий.';
+$our_production_text2 ='Реализация намеченных плановых заданий, а также свежий взгляд на привычные вещи - безусловно открывает новые горизонты для соответствующих условий активизации. Предварительные выводы неутешительны: экономическая повестка сегодняшнего дня требует анализа анализа существующих паттернов поведения.';
+$our_list_params = [  
+  "cl_car" => "Автомобильная химия", 
+  "home_him" => "Бытовая химия", 
+  "desinfect" => "Дезинфицирующие средства", 
+  "food_aerosol" => "Пищевые аэрозоли", 
+  "cl_cosmetic" => "Косметическая продукция",
+  "cl_brush" => "Краски аэрозольные",
+];
+include_once('./template-parts/our-production-block-v2.php');?>
+
+
+<?php 
+$founder_production_title='Отношение к делу <br /> и к клиентам';
+$fou_ph_name ='founder.jpg';
+$fou_ph_position ='founder-photo-left';
+$fcw_position ='f-c-w-right';
+//порядок элементов блока при адаптивности сверху вниз
+$adp_elem_order = 'img_tit_txt';
+// опция  скрывает ссылку подробнее о компании или добавляет кнопку
+//значение переменной link или button или пусто 
+$link_type = 'link';
+
+// $founder_list_params при наличии задает список иконок 
+
+$founder_text = 'Кстати, интерактивные прототипы описаны максимально подробно.П овседневная практика показывает, что укрепление и развитие
+внутренней структуры говорит о возможностях соответствующих
+условий активизации. Внезапно, независимые государства, которые
+представляют собой яркий пример континентально-европейского типа
+политической культуры, будут подвергнуты целой серии независимых
+исследований. С учётом сложившейся международной обстановки,
+синтетическое тестирование выявляет срочную потребность системы
+массового участия.';
+$founder_text2 = 'А ещё действия представителей оппозиции, превозмогая сложившуюся
+непростую экономическую ситуацию, в равной степени предоставлены
+сами себе. Не следует, однако, забывать, что выбранный нами
+инновационный путь в значительной степени обусловливает важность
+дальнейших направлений развития.';
+include_once('./template-parts/founder-block-v2.php');?>
+
+<?php 
+$blog_overflow_visible = 'blog-slider_visible';
+$blog_img_ontop = 'blog-card-image-zi0';
+$blog_title = 'Исследовательский центр Aliance production';
+$blog_p_text = 'Явные признаки победы институционализации рассмотрены исключительно в разрезе маркетинговых и финансовых предпосылок. Приятно, граждане, наблюдать, как активно развивающиеся страны третьего мира могут быть ограничены исключительно образом мышления. Лишь независимые государства набирают популярность среди определенных слоев населения, а значит, должны быть указаны как претенденты на роль ключевых факторов. Лишь акционеры крупнейших компаний могут быть призваны к ответу. 
+С учётом сложившейся международной обстановки, синтетическое тестирование требует определения и уточнения анализа существующих паттернов поведения. Не следует, однако, забывать, что высокотехнологичная концепция общественного уклада представляет собой интересный эксперимент проверки как самодостаточных, так и внешне зависимых концептуальных решений. Предварительные выводы неутешительны: разбавленное изрядной долей эмпатии, рациональное мышление однозначно фиксирует необходимость стандартных подходов.';
+include_once('./template-parts/blog-block.php');?>
+
+<?php include_once('./template-parts/clients-block.php');?>
+<?php include_once('footer.php');?>

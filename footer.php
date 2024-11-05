@@ -107,7 +107,7 @@
             <h2 class="footer-menu-title">Контрактное производство</h2>
             <ul class="footer-menu-list footer-menu-column-2">
               <li class="footer-menu-item">
-                <a href="#" class="footer-menu-link">Автомобильная химия</a>
+                <a href="./product_autohim.php" class="footer-menu-link">Автомобильная химия</a>
               </li>
               <li class="footer-menu-item">
                 <a href="#" class="footer-menu-link">Бытовая химия</a>
@@ -133,7 +133,7 @@
             <h2 class="footer-menu-title">Собственные марки</h2>
             <ul class="footer-menu-list">
               <li class="footer-menu-item">
-                <a href="#" class="footer-menu-link">Автохимия AG-Tech</a>
+                <a href="./AG-Tech.php" class="footer-menu-link">Автохимия AG-Tech</a>
               </li>
               <li class="footer-menu-item">
                 <a href="#" class="footer-menu-link">Автохимия AP</a>
@@ -144,7 +144,7 @@
           <div class="footer-menu-wrapper">
             <ul class="footer-menu-list, footer-menu-list-adapt">
               <li class="footer-menu-item">
-                <a href="#" class="footer-menu-link footer-menu-link-bold"
+                <a href="./about.php" class="footer-menu-link footer-menu-link-bold"
                   >О компании</a
                 >
               </li>
@@ -282,3 +282,5 @@
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/just-validate.production.min.js"></script>
   <script src="js/main.js"></script>
+  </body>
+</html>
