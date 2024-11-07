@@ -72,31 +72,76 @@
           <!-- /.clients-content -->
           <div class="clients-logo-list">
             <div class="clients-logo-item">
-              <img src="img/client.png" alt="" class="clients-logo" />
+             
+            <picture height="70" width="70" class="clients-logo">
+              <source type="image/webp" srcset="img/client.webp">
+              <source type="image/png" srcset="img/client.png">
+              <img src="img/client.png" alt="Краски аэрозольные"/>
+            </picture>
             </div>
             <div class="clients-logo-item">
-              <img src="img/client.png" alt="" class="clients-logo" />
+             
+            <picture height="70" width="70" class="clients-logo">
+              <source type="image/webp" srcset="img/client.webp">
+              <source type="image/png" srcset="img/client.png">
+              <img src="img/client.png" alt="Краски аэрозольные"/>
+            </picture>
             </div>
             <div class="clients-logo-item">
-              <img src="img/client.png" alt="" class="clients-logo" />
+             
+            <picture height="70" width="70" class="clients-logo">
+              <source type="image/webp" srcset="img/client.webp">
+              <source type="image/png" srcset="img/client.png">
+              <img src="img/client.png" alt="Краски аэрозольные"/>
+            </picture>
             </div>
             <div class="clients-logo-item">
-              <img src="img/client.png" alt="" class="clients-logo" />
+             
+            <picture height="70" width="70" class="clients-logo">
+              <source type="image/webp" srcset="img/client.webp">
+              <source type="image/png" srcset="img/client.png">
+              <img src="img/client.png" alt="Краски аэрозольные"/>
+            </picture>
             </div>
             <div class="clients-logo-item">
-              <img src="img/client.png" alt="" class="clients-logo" />
+             
+            <picture height="70" width="70" class="clients-logo">
+              <source type="image/webp" srcset="img/client.webp">
+              <source type="image/png" srcset="img/client.png">
+              <img src="img/client.png" alt="Краски аэрозольные"/>
+            </picture>
             </div>
             <div class="clients-logo-item">
-              <img src="img/client.png" alt="" class="clients-logo" />
+             
+            <picture height="70" width="70" class="clients-logo">
+              <source type="image/webp" srcset="img/client.webp">
+              <source type="image/png" srcset="img/client.png">
+              <img src="img/client.png" alt="Краски аэрозольные"/>
+            </picture>
             </div>
             <div class="clients-logo-item">
-              <img src="img/client.png" alt="" class="clients-logo" />
+             
+            <picture height="70" width="70" class="clients-logo">
+              <source type="image/webp" srcset="img/client.webp">
+              <source type="image/png" srcset="img/client.png">
+              <img src="img/client.png" alt="Краски аэрозольные"/>
+            </picture>
             </div>
             <div class="clients-logo-item">
-              <img src="img/client.png" alt="" class="clients-logo" />
+             
+            <picture height="70" width="70" class="clients-logo">
+              <source type="image/webp" srcset="img/client.webp">
+              <source type="image/png" srcset="img/client.png">
+              <img src="img/client.png" alt="Краски аэрозольные"/>
+            </picture>
             </div>
             <div class="clients-logo-item">
-              <img src="img/client.png" alt="" class="clients-logo" />
+             
+            <picture height="70" width="70" class="clients-logo">
+              <source type="image/webp" srcset="img/client.webp">
+              <source type="image/png" srcset="img/client.png">
+              <img src="img/client.png" alt="Краски аэрозольные"/>
+            </picture>
             </div>
           </div>
           <!-- /.clients-logo -->
