@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -147,9 +148,12 @@
     </nav>
     <!-- /.navbar -->
 
+    <?php 
+     if (!empty($breadcrumb_style)) {  
+    ?>
     <section class="bg-grey header_inner1 <?=$header_style; ?>">
-      <div class="container">
-        <div class="separator"></div>
+      <div class="container ">
+        <div class="separator <?=$separator_w135; ?>"></div>
         <h1 class="section-title-about"><?php echo $page_title;?></h1>
         <ul class="breadcrumb <?=$breadcrumb_style; ?>">
           <li>
@@ -170,4 +174,6 @@
       </div>
     </section>
     <!-- section header_inner -->
-
+    <?php 
+     }    
+    ?>

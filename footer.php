@@ -1,4 +1,8 @@
-  <section class="cta">
+
+<?php 
+  if (empty($cta_off)) {  
+?>
+<section class="cta">
       <div class="bg-grey section-cta">
         <img src="/img/cta.png" alt="call to action" class="cta-image" />
         <div class="cta-form-wrapper container">
@@ -60,6 +64,9 @@
         <!-- /.cta-form-wrapper -->
       </div>
     </section>
+    <?php 
+  } 
+?>
     <footer class="footer">
       <div class="container">
         <div class="footer-top">

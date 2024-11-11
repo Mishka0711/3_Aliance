@@ -1,7 +1,7 @@
-<section class="section our_production">  
+<section class="section our_production-section <?=$our_production_section_var2;?>">  
   <div class="container">
     <div class="our_production-content-wrapper <?=$grid_img_position;?> <?=$adp_elem_order; ?> ">
-      <div class="our_production-title">
+      <div class="our_production-title <?=$our_production_title_var2;?>">
         <div class="separator"></div>
         <h2 class="section-title section-title-our_production">
         <?=$our_production_title; ?>   
@@ -10,7 +10,7 @@
       <!-- /.our-production-title -->
         <?php 
          if (!empty($our_production_text))  {
-          echo '<div class="our_production-content">';
+          echo '<div class="our_production-content '.$production_content_var2 .'">';
           echo '<p class="our_production-text">'.$our_production_text .'</p>';  
         }        
           if (!empty($our_production_text2))  {

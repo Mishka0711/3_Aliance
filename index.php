@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -392,14 +393,14 @@
 
     <?php $block_title= "Собственные торговые марки"; include_once('./template-parts/trademarks-block.php')?>
 
-    <section class="section founder">
+    <section class="section founder-section">
 
-      <picture class="founder-photo founder-photo-left">
+      <!-- <picture class="founder-photo founder-photo-left">
         <source type="image/webp" srcset="img/founder.webp">
         <source type="image/jpeg" srcset="img/founder.jpg">
         <img src="img/founder.jpg"  alt="Краски аэрозольные"/>
-      </picture>
-      <!-- <img src="img/founder.jpg" class="founder-photo founder-photo-left" alt="Краски аэрозольные"/> -->
+      </picture> -->
+      <img src="img/founder.jpg" class="founder-photo founder-photo-left" alt="Краски аэрозольные"/>
       <div class="container">
         <div class="founder-content-wrapper  f-c-w-right">
           <div class="founder-content">
@@ -592,7 +593,7 @@
     <section class="section section-blog">
       <div class="container">
         <div class="separator"></div>
-        <h2 class="section-title section-title-blog">
+        <h2 class="section-title section-title-blog section-title-blog-main">
           Блог экспертов в области производства
         </h2>
         <!-- Slider main container -->
@@ -600,7 +601,7 @@
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
             <!-- Slides -->
-            <a href="#" class="swiper-slide blog-card"
+            <a href="./blog_more.php" class="swiper-slide blog-card"
               ><img src="/img/blog-photo1.jpg" alt="" class="blog-card-image" />
               <h3 class="blog-card-title">
                 Современная методология разработки одухотворила всех причастных
@@ -611,7 +612,7 @@
                 предоставлены...
               </p>
             </a>
-            <a href="#" class="swiper-slide blog-card"
+            <a href="./blog_more.php" class="swiper-slide blog-card"
               ><img src="/img/blog-photo2.jpg" alt="" class="blog-card-image" />
               <h3 class="blog-card-title">
                 Сложно сказать, почему жизнь прекрасна
@@ -622,7 +623,7 @@
                 высокотехнологичная...
               </p>
             </a>
-            <a href="#" class="swiper-slide blog-card"
+            <a href="./blog_more.php" class="swiper-slide blog-card"
               ><img src="/img/blog-photo2.jpg" alt="" class="blog-card-image" />
               <h3 class="blog-card-title">
                 Сложно сказать, почему жизнь прекрасна
@@ -636,7 +637,7 @@
           </div>
 
           <div class="blog-slider-footer">
-            <a href="#" class="button-link">Весь блог</a>
+            <a href="./all-blog.php" class="button-link button-link-main">Весь блог</a>
             <!-- кнопки вперед назад -->
             <div class="blog-buttons primary-buttons-wrapper">
               <div class="blog-button-prev primary-button-prev">

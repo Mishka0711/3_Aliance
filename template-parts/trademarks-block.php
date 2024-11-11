@@ -1,4 +1,4 @@
-<div class="section section-trademark">
+<div class="section section-trademark <?=$section_trademark_var2;?>">
   <div class="container">
     
     <?php 

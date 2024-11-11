@@ -1,4 +1,4 @@
-<section class="section founder <?=$premium_autohim;?> <?=$adp_elem_order;?>">
+<section class="section founder-section <?=$premium_autohim;?> <?=$adp_elem_order;?>">
   <img src="img/<?=$fou_ph_name;?>" alt="" class="founder-photo <?=$fou_ph_position;?>" />
   <div class="container">
     <div class="founder-content-wrapper <?=$fcw_position;?>">
@@ -20,9 +20,9 @@
           echo '<p class="founder-link-375">О нашей миссии</p></a>';
         }
         if (!empty($founder_icons_list)) {              
-          echo '<ul class="our_production-list">';                   
+          echo '<ul class="our_production-list '.$our_production_list_v2.'">';                   
             for ($n = 1; $n <= count($founder_icons_list); $n++) {
-              echo '<li class="clients-list-item">';
+              echo '<li class="clients-list-item '.$clients_list_item_v2.'">';
               echo '<svg width="30" height="30" class="client-list-icon">';
               echo '<use href="img/sprite.svg#'. $founder_icons_list[$n].'"></use>;';
               echo '</svg>'.$founder_names_list[$n].'</li> ';
