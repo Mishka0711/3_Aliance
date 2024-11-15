@@ -120,7 +120,7 @@
       </a>
       <ul class="header-nav">
         <li class="header-nav-item">
-          <a href="/about.php" class="header-nav-link">О компании</a>
+          <a href="./about.php" class="header-nav-link">О компании</a>
         </li>
         <li class="header-nav-item">
           <a href="./contracts.php" class="header-nav-link">Контрактное производство</a>
@@ -243,7 +243,7 @@
                 Безусловно, сплочённость команды профессионалов позволяет
                 оценить значение форм воздействия.
               </p>
-              <a href="#" class="button-link">Оставить заявку</a>
+              <a href="#" class="button-link" data-toggle="modal" data-target="#feedback-modal">Оставить заявку</a>
             </li>
             <li class="swiper-slide steps-item">
               <span class="steps-num">02</span>
@@ -303,7 +303,7 @@
             <!-- /.card-content -->
 
             <img
-              src="/img/avto-him.png"
+              src="./img/avto-him.png"
               alt="Автомобильная химия"
               class="card-image"
             />
@@ -319,7 +319,7 @@
             <!-- /.card-content -->
 
             <img
-              src="/img/bit-him.png"
+              src="./img/bit-him.png"
               alt="Бытовая химия"
               class="card-image"
             />
@@ -334,7 +334,7 @@
             <!-- /.card-content -->
 
             <img
-              src="/img/dezinfect.png"
+              src="./img/dezinfect.png"
               alt="Дезинфицирующие средства"
               class="card-image"
             />
@@ -350,7 +350,7 @@
             <!-- /.card-content -->
 
             <img
-              src="/img/dezinfect.png"
+              src="./img/dezinfect.png"
               alt="Пищевые аэрозоли"
               class="card-image"
             />
@@ -365,7 +365,7 @@
             <!-- /.card-content -->
 
             <img
-              src="/img/avto-him.png"
+              src="./img/avto-him.png"
               alt="Косметическая продукция"
               class="card-image"
             />
@@ -381,7 +381,7 @@
             <!-- /.card-content -->
 
             <img
-              src="/img/bit-him.png"
+              src="./img/bit-him.png"
               alt="Краски аэрозольные"
               class="card-image"
             />
@@ -427,7 +427,7 @@
               инновационный путь в значительной степени обусловливает важность
               дальнейших направлений развития.
             </p>
-            <a href="#" class="button-link">
+            <a href="./about.php" class="button-link">
               <p class="founder-link-1920">Подробнее о компании</p>
               <p class="founder-link-375">О нашей миссии</p></a
             >
@@ -510,78 +510,78 @@
           </div>
           <!-- /.clients-content -->
           <div class="clients-logo-list">
-            <div class="clients-logo-item">
+            <a href="#" class="clients-logo-item">
              
-            <picture height="70" width="70" class="clients-logo">
+            <picture class="clients-logo">
               <source type="image/webp" srcset="img/client.webp">
               <source type="image/png" srcset="img/client.png">
-              <img src="img/client.png" alt="Краски аэрозольные"/>
+              <img src="img/client.png"  height="70" width="70" alt="Краски аэрозольные"/>
             </picture>
-            </div>
-            <div class="clients-logo-item">
+            </a>
+            <a href="#" class="clients-logo-item">
              
-            <picture height="70" width="70" class="clients-logo">
+            <picture class="clients-logo">
               <source type="image/webp" srcset="img/client.webp">
               <source type="image/png" srcset="img/client.png">
-              <img src="img/client.png" alt="Краски аэрозольные"/>
+              <img src="img/client.png"  height="70" width="70" alt="Краски аэрозольные"/>
             </picture>
-            </div>
-            <div class="clients-logo-item">
+            </a>
+            <a href="#" class="clients-logo-item">
              
-            <picture height="70" width="70" class="clients-logo">
+            <picture class="clients-logo">
               <source type="image/webp" srcset="img/client.webp">
               <source type="image/png" srcset="img/client.png">
-              <img src="img/client.png" alt="Краски аэрозольные"/>
+              <img src="img/client.png"  height="70" width="70" alt="Краски аэрозольные"/>
             </picture>
-            </div>
-            <div class="clients-logo-item">
+            </a>
+            <a href="#" class="clients-logo-item">
              
-            <picture height="70" width="70" class="clients-logo">
+            <picture class="clients-logo">
               <source type="image/webp" srcset="img/client.webp">
               <source type="image/png" srcset="img/client.png">
-              <img src="img/client.png" alt="Краски аэрозольные"/>
+              <img src="img/client.png"  height="70" width="70" alt="Краски аэрозольные"/>
             </picture>
-            </div>
-            <div class="clients-logo-item">
+            </a>
+            <a href="#" class="clients-logo-item">
              
-            <picture height="70" width="70" class="clients-logo">
+            <picture class="clients-logo">
               <source type="image/webp" srcset="img/client.webp">
               <source type="image/png" srcset="img/client.png">
-              <img src="img/client.png" alt="Краски аэрозольные"/>
+              <img src="img/client.png"  height="70" width="70" alt="Краски аэрозольные"/>
             </picture>
-            </div>
-            <div class="clients-logo-item">
+            </a>
+            <a href="#" class="clients-logo-item">
              
-            <picture height="70" width="70" class="clients-logo">
+            <picture  class="clients-logo">
               <source type="image/webp" srcset="img/client.webp">
               <source type="image/png" srcset="img/client.png">
-              <img src="img/client.png" alt="Краски аэрозольные"/>
+              <img src="img/client.png" height="70" width="70" alt="Краски аэрозольные"/>
             </picture>
-            </div>
-            <div class="clients-logo-item">
+            </a>
+            <a href="#" class="clients-logo-item">
              
-            <picture height="70" width="70" class="clients-logo">
+            <picture class="clients-logo">
               <source type="image/webp" srcset="img/client.webp">
               <source type="image/png" srcset="img/client.png">
-              <img src="img/client.png" alt="Краски аэрозольные"/>
+              <img src="img/client.png"  height="70" width="70" alt="Краски аэрозольные"/>
             </picture>
-            </div>
-            <div class="clients-logo-item">
+            </a>
+            <a href="#" class="clients-logo-item">
              
-            <picture height="70" width="70" class="clients-logo">
+            <picture class="clients-logo">
               <source type="image/webp" srcset="img/client.webp">
               <source type="image/png" srcset="img/client.png">
-              <img src="img/client.png" alt="Краски аэрозольные"/>
+              <img src="img/client.png"  height="70" width="70" alt="Краски аэрозольные"/>
             </picture>
-            </div>
-            <div class="clients-logo-item">
+            </a>
+            <a href="#" class="clients-logo-item">
              
-            <picture height="70" width="70" class="clients-logo">
+            <picture class="clients-logo">
               <source type="image/webp" srcset="img/client.webp">
               <source type="image/png" srcset="img/client.png">
-              <img src="img/client.png" alt="Краски аэрозольные"/>
+              <img src="img/client.png"  height="70" width="70" alt="Краски аэрозольные"/>
             </picture>
-            </div>
+            </a>
           </div>
           <!-- /.clients-logo -->
         </div>
@@ -602,7 +602,7 @@
           <div class="swiper-wrapper">
             <!-- Slides -->
             <a href="./blog_more.php" class="swiper-slide blog-card"
-              ><img src="/img/blog-photo1.jpg" alt="" class="blog-card-image" />
+              ><img src="./img/blog-photo1.jpg" alt="" class="blog-card-image" />
               <h3 class="blog-card-title">
                 Современная методология разработки одухотворила всех причастных
               </h3>
@@ -613,7 +613,7 @@
               </p>
             </a>
             <a href="./blog_more.php" class="swiper-slide blog-card"
-              ><img src="/img/blog-photo2.jpg" alt="" class="blog-card-image" />
+              ><img src="./img/blog-photo2.jpg" alt="" class="blog-card-image" />
               <h3 class="blog-card-title">
                 Сложно сказать, почему жизнь прекрасна
               </h3>
@@ -624,7 +624,7 @@
               </p>
             </a>
             <a href="./blog_more.php" class="swiper-slide blog-card"
-              ><img src="/img/blog-photo2.jpg" alt="" class="blog-card-image" />
+              ><img src="./img/blog-photo2.jpg" alt="" class="blog-card-image" />
               <h3 class="blog-card-title">
                 Сложно сказать, почему жизнь прекрасна
               </h3>

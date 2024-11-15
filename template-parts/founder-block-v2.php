@@ -24,7 +24,7 @@
             for ($n = 1; $n <= count($founder_icons_list); $n++) {
               echo '<li class="clients-list-item '.$clients_list_item_v2.'">';
               echo '<svg width="30" height="30" class="client-list-icon">';
-              echo '<use href="img/sprite.svg#'. $founder_icons_list[$n].'"></use>;';
+              echo '<use href="img/sprite.svg#'. $founder_icons_list[$n].'"></use>';
               echo '</svg>'.$founder_names_list[$n].'</li> ';
             }
             echo '</ul>'; 
@@ -32,7 +32,7 @@
           if ($link_type == 'button') {
             echo'<button type="" class="button download-katalog-button" >'; 
             echo '<svg width="24" height="24" class="client-list-icon">';
-            echo '<use href="img/sprite.svg#download"></use>;';
+            echo '<use href="img/sprite.svg#download"></use>';
             echo '</svg>';
             echo '<p>Скачать каталог</p>';
             echo '</button>';

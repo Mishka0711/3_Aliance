@@ -157,17 +157,17 @@
         <h1 class="section-title-about"><?php echo $page_title;?></h1>
         <ul class="breadcrumb <?=$breadcrumb_style; ?>">
           <li>
-            <a class="breadcrumb_li" href="../index.php">Главная</a>
+            <a class="breadcrumb_li" href="./index.php">Главная</a>
           </li>
           <?php
           if (!empty($breadcrumb_lvl2_link))  {
-            echo '<li><a class="breadcrumb_li" href="../'.$breadcrumb_lvl2_link.'">'.$breadcrumb_lvl2_name.'</a></li>';
+            echo '<li><a class="breadcrumb_li" href="./'.$breadcrumb_lvl2_link.'">'.$breadcrumb_lvl2_name.'</a></li>';
           }   
           ?>          
           <li><a class="breadcrumb_li" href="#"><?php echo $page_title;?></a></li>
         </ul>
         <img
-          src="/img/title-avto-him.png"
+          src="./img/title-avto-him.png"
           alt="call to action"
           class="<?=$autohim_title_image_hidden; ?>  autohim-title-image "
         />

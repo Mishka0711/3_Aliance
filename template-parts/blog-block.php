@@ -5,9 +5,14 @@
         <?php echo $blog_title; ?> 
         </h2>
         <?php 
-          if (!empty($blog_p_text)) {
+          echo '<div class="blog-text-content">';         
+          if (!empty($blog_p_text)) {            
           echo '<p class="founder-text blog-text">' . $blog_p_text . '</p>'; 
-          }                
+          }   
+          if (!empty($blog_p_text2)) {
+            echo '<p class="founder-text blog-text blog-text2">' . $blog_p_text2 . '</p>'; 
+            }   
+            echo '</div>';                       
         ?>
         <!-- Slider main container -->
         <div class="blog-slider <?php echo $blog_overflow_visible; ?>">
@@ -15,7 +20,7 @@
           <div class="swiper-wrapper">
             <!-- Slides -->
             <a href="./blog_more.php" class="swiper-slide blog-card"
-              ><img src="/img/blog-photo1.jpg" alt="" class="blog-card-image <?php echo $blog_img_ontop; ?>" />
+              ><img src="./img/blog-photo1.jpg" alt="" class="blog-card-image <?php echo $blog_img_ontop; ?>" />
               <h3 class="blog-card-title">
                 Современная методология разработки одухотворила всех причастных
               </h3>
@@ -26,7 +31,7 @@
               </p>
             </a>
             <a href="./blog_more.php" class="swiper-slide blog-card"
-              ><img src="/img/blog-photo2.jpg" alt="" class="blog-card-image <?php echo $blog_img_ontop; ?>" />
+              ><img src="./img/blog-photo2.jpg" alt="" class="blog-card-image <?php echo $blog_img_ontop; ?>" />
               <h3 class="blog-card-title">
                 Сложно сказать, почему жизнь прекрасна
               </h3>
@@ -37,7 +42,7 @@
               </p>
             </a>
             <a href="./blog_more.php" class="swiper-slide blog-card"
-              ><img src="/img/blog-photo2.jpg" alt="" class="blog-card-image <?php echo $blog_img_ontop; ?>" />
+              ><img src="./img/blog-photo2.jpg" alt="" class="blog-card-image <?php echo $blog_img_ontop; ?>" />
               <h3 class="blog-card-title">
                 Сложно сказать, почему жизнь прекрасна
               </h3>
@@ -48,7 +53,7 @@
               </p>
             </a>
             <a href="./blog_more.php" class="swiper-slide blog-card"
-              ><img src="/img/blog-photo1.jpg" alt="" class="blog-card-image <?php echo $blog_img_ontop; ?>" />
+              ><img src="./img/blog-photo1.jpg" alt="" class="blog-card-image <?php echo $blog_img_ontop; ?>" />
               <h3 class="blog-card-title">
                 Современная методология разработки одухотворила всех причастных
               </h3>
@@ -62,6 +67,9 @@
           
  
           <div class="blog-slider-footer">
+
+
+
           <?php 
           if ($link_all_blog == 'link') {         
             echo '<a href="./all-blog.php" class="button-link">Весь блог</a>';

@@ -71,78 +71,78 @@
           </div>
           <!-- /.clients-content -->
           <div class="clients-logo-list">
-            <div class="clients-logo-item">
+            <a href="#" class="clients-logo-item">
              
-            <picture height="70" width="70" class="clients-logo">
+            <picture  class="clients-logo">
               <source type="image/webp" srcset="img/client.webp">
               <source type="image/png" srcset="img/client.png">
-              <img src="img/client.png" alt="Краски аэрозольные"/>
+              <img src="img/client.png" height="70" width="70" alt="Краски аэрозольные"/>
             </picture>
-            </div>
-            <div class="clients-logo-item">
+            </a>
+            <a href="#" class="clients-logo-item">
              
-            <picture height="70" width="70" class="clients-logo">
+            <picture  class="clients-logo">
               <source type="image/webp" srcset="img/client.webp">
               <source type="image/png" srcset="img/client.png">
-              <img src="img/client.png" alt="Краски аэрозольные"/>
+              <img src="img/client.png" height="70" width="70" alt="Краски аэрозольные"/>
             </picture>
-            </div>
-            <div class="clients-logo-item">
+            </a>
+            <a href="#" class="clients-logo-item">
              
-            <picture height="70" width="70" class="clients-logo">
+            <picture  class="clients-logo">
               <source type="image/webp" srcset="img/client.webp">
               <source type="image/png" srcset="img/client.png">
-              <img src="img/client.png" alt="Краски аэрозольные"/>
+              <img src="img/client.png" height="70" width="70" alt="Краски аэрозольные"/>
             </picture>
-            </div>
-            <div class="clients-logo-item">
+            </a>
+            <a href="#" class="clients-logo-item">
              
-            <picture height="70" width="70" class="clients-logo">
+            <picture  class="clients-logo">
               <source type="image/webp" srcset="img/client.webp">
               <source type="image/png" srcset="img/client.png">
-              <img src="img/client.png" alt="Краски аэрозольные"/>
+              <img src="img/client.png" height="70" width="70" alt="Краски аэрозольные"/>
             </picture>
-            </div>
-            <div class="clients-logo-item">
+            </a>
+            <a href="#" class="clients-logo-item">
              
-            <picture height="70" width="70" class="clients-logo">
+            <picture  class="clients-logo">
               <source type="image/webp" srcset="img/client.webp">
               <source type="image/png" srcset="img/client.png">
-              <img src="img/client.png" alt="Краски аэрозольные"/>
+              <img src="img/client.png" height="70" width="70" alt="Краски аэрозольные"/>
             </picture>
-            </div>
-            <div class="clients-logo-item">
+            </a>
+            <a href="#" class="clients-logo-item">
              
-            <picture height="70" width="70" class="clients-logo">
+            <picture  class="clients-logo">
               <source type="image/webp" srcset="img/client.webp">
               <source type="image/png" srcset="img/client.png">
-              <img src="img/client.png" alt="Краски аэрозольные"/>
+              <img src="img/client.png" height="70" width="70" alt="Краски аэрозольные"/>
             </picture>
-            </div>
-            <div class="clients-logo-item">
+            </a>
+            <a href="#" class="clients-logo-item">
              
-            <picture height="70" width="70" class="clients-logo">
+            <picture  class="clients-logo">
               <source type="image/webp" srcset="img/client.webp">
               <source type="image/png" srcset="img/client.png">
-              <img src="img/client.png" alt="Краски аэрозольные"/>
+              <img src="img/client.png" height="70" width="70" alt="Краски аэрозольные"/>
             </picture>
-            </div>
-            <div class="clients-logo-item">
+            </a>
+            <a href="#" class="clients-logo-item">
              
-            <picture height="70" width="70" class="clients-logo">
+            <picture  class="clients-logo">
               <source type="image/webp" srcset="img/client.webp">
               <source type="image/png" srcset="img/client.png">
-              <img src="img/client.png" alt="Краски аэрозольные"/>
+              <img src="img/client.png" height="70" width="70" alt="Краски аэрозольные"/>
             </picture>
-            </div>
-            <div class="clients-logo-item">
+            </a>
+            <a href="#" class="clients-logo-item">
              
-            <picture height="70" width="70" class="clients-logo">
+            <picture  class="clients-logo">
               <source type="image/webp" srcset="img/client.webp">
               <source type="image/png" srcset="img/client.png">
-              <img src="img/client.png" alt="Краски аэрозольные"/>
+              <img src="img/client.png" height="70" width="70" alt="Краски аэрозольные"/>
             </picture>
-            </div>
+            </a>
           </div>
           <!-- /.clients-logo -->
         </div>

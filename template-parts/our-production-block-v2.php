@@ -21,7 +21,7 @@
           foreach ($our_list_params as $svg_id => $listitem_name) {
             echo '<li class="clients-list-item">';
             echo '<svg width="30" height="30" class="client-list-icon">';
-            echo '<use href="img/sprite.svg#'. $svg_id.'"></use>;';
+            echo '<use href="img/sprite.svg#'. $svg_id.'"></use>';
             echo '</svg>'.$listitem_name.'</li> ';
             };
             echo '</ul>'; 

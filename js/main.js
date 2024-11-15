@@ -1,21 +1,25 @@
 const navbar = document.querySelector(".navbar");
+const navbarButton = document.querySelector(".navbar-button");
 //const logo = document.querySelector(".logo-svg use"); //старый режим смены логотипа
 const logoLight = document.querySelector(".logo-light"); //новый режим смены логотипа
 const logo = document.querySelector(".logo"); //новый режим смены логотипа
 const mMenuToggle = document.querySelector(".mobile-menu-toggle");
 const menu = document.querySelector(".mobile-menu");
+const mobileMenus = document.querySelectorAll(".mobile-menu-line");
 const isFront = document.body.classList.contains("front-page");
 
 const lightModeOn = (event) => {
   navbar.classList.add("navbar-light");
   logo.style.display = "block"; //новый режим смены логотипа
   logoLight.style.display = "none"; //новый режим смены логотипа
+
   // logo.href.baseVal = "img/sprite.svg#logo";//старый режим смены логотипа
 };
 const lightModeOff = (event) => {
   navbar.classList.remove("navbar-light");
   logo.style.display = "none"; //новый режим смены логотипа
   logoLight.style.display = "block"; //новый режим смены логотипа
+
   // logo.href.baseVal = "img/sprite.svg#logo";//старый режим смены логотипа
 };
 
@@ -23,9 +27,15 @@ const changeNavHeight = (height) => {
   navbar.style.height = height;
 };
 
+const mobileMenuLine = (translateY) => {
+  navbar.style.height = height;
+};
+
 const openMenu = (event) => {
   //функция открывания меню
   menu.classList.add("is-open"); //вешает класс is-open
+  navbar.classList.add("navbar-modal");
+  // navbarButton.classList.add("navbar-button-modal");
   mMenuToggle.classList.add("close-menu");
   document.body.style.overflow = "hidden"; //запрет прокрутки сайта подменю
   lightModeOn();
@@ -33,6 +43,8 @@ const openMenu = (event) => {
 const closeMenu = (event) => {
   //функция закрывания меню
   menu.classList.remove("is-open"); //удалить класс is-open
+  navbar.classList.remove("navbar-modal");
+  // navbarButton.classList.remove("navbar-button-modal");
   mMenuToggle.classList.remove("close-menu");
   document.body.style.overflow = ""; //разрешение прокрутки сайта подменю
   lightModeOff();
@@ -41,6 +53,11 @@ const closeMenu = (event) => {
 window.addEventListener("scroll", () => {
   // this.scrollY > 1 ? lightModeOn() : lightModeOff();
   this.scrollY > 1 ? changeNavHeight("4.5rem") : changeNavHeight("5.875rem");
+  mobileMenus.forEach((mobileMenu) => {
+    this.scrollY > 1
+      ? mobileMenu.classList.add("mobile-menu-line-scr")
+      : mobileMenu.classList.remove("mobile-menu-line-scr");
+  });
   if (isFront) {
     this.scrollY > 1 ? lightModeOn() : lightModeOff();
   }
@@ -201,6 +218,12 @@ forms.forEach((form) => {
         value: 50,
         errorMessage: "Максимально 50 символов",
       },
+      {
+        // если мало символов
+        rule: "minLength",
+        value: 2,
+        errorMessage: "Имя от 2 символов",
+      },
     ])
     //проверка поля ввода номера
     .addField("[name=userphone]", [
@@ -208,6 +231,12 @@ forms.forEach((form) => {
         // если ничего не найдено
         rule: "required",
         errorMessage: "Укажите телефон",
+      },
+      {
+        // если мало символов
+        rule: "minLength",
+        value: 16,
+        errorMessage: "Неполный номер",
       },
     ])
     // в случае успешной проверки полей берем данные формы и через указанный метод отправляем на хэндлер

@@ -24,10 +24,15 @@ include_once('header-page.php')?>
             <li>
               <a href="./blog_more.php"
                 >Современная методология разработки одухотворила всех
-                причастных</a
+                причастных </a
               >
             </li>
+          
           </ul>
+          <!-- <a class="breadcrumb_dark2 blog-more-v2" href="./blog_more.php"
+                >Современная методология разработки одухотворила всех
+                причастных</a
+              > -->
         </div>
       </div>
     </section>

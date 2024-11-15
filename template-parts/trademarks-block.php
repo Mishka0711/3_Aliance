@@ -10,7 +10,7 @@
     ?>
     <h2 class="section-title section-title_375px">собственные марки</h2>
     <div class="trademark-cards">
-      <div class="trademark-card">
+      <a href="./AG-Tech.php" class="trademark-card">
         <svg class="trademark-card-logo">
           <use href="img/sprite.svg#AGTECH"></use>
         </svg>
@@ -20,8 +20,8 @@
           рациональное мышление создаёт предпосылки для поставленных
           обществом задач.
         </p>
-      </div>
-      <div class="trademark-card">
+    </a>
+      <a href="#" class="trademark-card">
         <svg class="trademark-card-logo">
           <use href="img/sprite.svg#AP"></use>
         </svg>
@@ -31,7 +31,7 @@
           рациональное мышление создаёт предпосылки для поставленных
           обществом задач.
         </p>
-      </div>
+      </a>
     </div>
     <!-- /.trademark-cards -->
   </div>

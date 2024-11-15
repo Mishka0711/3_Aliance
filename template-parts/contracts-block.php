@@ -21,7 +21,7 @@
             <!-- /.card-content -->
 
             <img
-              src="/img/avto-him.png"
+              src="./img/avto-him.png"
               alt="Автомобильная химия"
               class="card-image"
             />
@@ -37,7 +37,7 @@
             <!-- /.card-content -->
 
             <img
-              src="/img/bit-him.png"
+              src="./img/bit-him.png"
               alt="Бытовая химия"
               class="card-image"
             />
@@ -52,7 +52,7 @@
             <!-- /.card-content -->
 
             <img
-              src="/img/dezinfect.png"
+              src="./img/dezinfect.png"
               alt="Дезинфицирующие средства"
               class="card-image"
             />
@@ -68,7 +68,7 @@
             <!-- /.card-content -->
 
             <img
-              src="/img/dezinfect.png"
+              src="./img/dezinfect.png"
               alt="Пищевые аэрозоли"
               class="card-image"
             />
@@ -83,7 +83,7 @@
             <!-- /.card-content -->
 
             <img
-              src="/img/avto-him.png"
+              src="./img/avto-him.png"
               alt="Косметическая продукция"
               class="card-image"
             />
@@ -99,7 +99,7 @@
             <!-- /.card-content -->
 
             <img
-              src="/img/bit-him.png"
+              src="./img/bit-him.png"
               alt="Краски аэрозольные"
               class="card-image"
             />

@@ -4,7 +4,7 @@
 ?>
 <section class="cta">
       <div class="bg-grey section-cta">
-        <img src="/img/cta.png" alt="call to action" class="cta-image" />
+        <img src="./img/cta.png" alt="call to action" class="cta-image" />
         <div class="cta-form-wrapper container">
           <form action="/handler.php" method="POST" class="cta-form">
             <h2 class="section-title cta-form-title">Хотите сотрудничать?</h2>
@@ -70,9 +70,11 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-top">
+          <a href="./index.php">
           <svg class="footer-logo">
             <use href="img/sprite.svg#logo"></use>
           </svg>
+          </a>
           <a href="tel:+79996861014" class="footer-phone">+7 (999) 686-10-14</a>
           <div class="footer-info">
             <svg width="14" height="14">
@@ -107,7 +109,8 @@
         </div>
         <!-- /.footer-top -->
       </div>
-      <hr color="#ebebf0" class="footer-separator" />
+      <!-- <hr color="#ebebf0" class="footer-separator" /> -->
+      <hr class="footer-separator" />
       <div class="container">
         <div class="footer-bottom">
           <div class="footer-menu-wrapper">
@@ -171,7 +174,7 @@
         </div>
       </div>
       <!-- container -->
-      <hr color="#ebebf0" class="footer-separator" />
+      <hr class="footer-separator" />
       <div class="container">
         <div class="footer-wrapper fw-legal">
           <div class="footer-legal">
@@ -192,15 +195,15 @@
         </div>
       </div>
     </footer>
-    <div class="modal" id="feedback-modal">
-      <div class="modal-dialog">
-        <h2 class="modal-title">Есть вопросы?</h2>
-        <a href="#" class="modal-close" data-toggle="modal" data-target="#feedback-modal">
-          <svg class="close-icon" width="24" height="24">
+    <div class="modal modal-questions" id="feedback-modal">
+      <div class="modal-dialog modal-dialog1">
+        <h2 class="modal-title modal-title1">Есть вопросы?</h2>
+        <a href="#" class="modal-close modal-close1" data-toggle="modal" data-target="#feedback-modal">
+          <svg class="close-icon" width="18" height="18">
             <use href="img/sprite.svg#mw_close"></use>
           </svg>
         </a>
-        <p class="modal-text">
+        <p class="modal-text modal-text1">
           Оставьте заявку, наш менеджер свяжется с Вами в ближайшее время
           ответит на все интересующие вопросы и поможем даже в самых сложных
           случаях!
@@ -243,8 +246,8 @@
             <!-- /.input-group -->
           </div>
           <!-- /.input-group-wrapper -->
-          <div class="modal-form-footer">
-            <button type="submit" class="button modal-form-button">
+          <div class="modal-form-footer modal-form-footer1">
+            <button type="submit" class="button modal-form-button modal-form-button1">
               Отправить заявку
             </button>
             <div class="notify">
@@ -265,7 +268,7 @@
 
     <div class="modal-thanks" id="alert-modal">
       <div class="modal-dialog modal-dialog-thanks">        
-        <img src="/img/thanks_illu.png" alt="thanks-you" class="modal-image" />
+        <img src="./img/thanks_illu.png" alt="thanks-you" class="modal-image" />
       
         <a href="#" class="modal-close modal-close-thanks" data-toggle="modal" data-target="#alert-modal">
           <svg class="close-icon" width="24" height="24">
@@ -278,14 +281,13 @@
         </p>
         <button type="reset" class="button modal-form-button mf-btn-thanks" data-toggle="modal" data-target="#alert-modal">
         Вернуться на главную
-        <!-- <a href="../index.php"></a> -->          
+        <!-- <a href="./index.php"></a> -->          
         </button>
 
       </div>
     </div>
     <!-- modal-thanks -->
     
-  </section>  
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/just-validate.production.min.js"></script>
   <script src="js/main.js"></script>
